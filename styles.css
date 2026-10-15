@@ -5,14 +5,15 @@
 
 :root {
   /* brand palette, kept */
-  --night: #272757;      /* ground */
-  --night-2: #2E2E63;    /* one tone step up, for bands */
-  --night-3: #20204A;    /* one tone step down */
-  --paper: #F7F7F7;      /* ink on night, ground on paper fields */
-  --dusk: #416788;       /* type accent on paper, field colour on night */
-  --plum: #932F6D;       /* the action */
-  --plum-light: #D978B0; /* plum as text on night (4.8:1) */
-  --soft: #BFC2DB;       /* secondary notes on night */
+  --night: #154449;      /* verde monte: ground */
+  --night-2: #1B4F55;    /* one tone step up, for bands */
+  --night-3: #0F363A;    /* one tone step down */
+  --paper: #E5DBC7;      /* beige: ink on green, ground on beige fields */
+  --dusk: #6F4E37;       /* café: type accent on beige, field colour */
+  --clay: #C16743;       /* arcilla cálida: icons, highlights */
+  --plum: #954729;       /* arcilla, deepened for fills that carry beige text (4.8:1) */
+  --plum-light: #E39A7A; /* arcilla as text on green (4.7:1) */
+  --soft: #C9BFA9;       /* secondary notes on green */
 
   --font-display: "Imbue", "Didot", "Bodoni 72", Georgia, serif;
   --font-text: "Albert Sans", system-ui, sans-serif;
@@ -43,7 +44,7 @@ ul[class], ol[class] { padding: 0; list-style: none; }
 img { display: block; max-width: 100%; height: auto; }
 a { color: inherit; }
 button, input { font: inherit; color: inherit; }
-::selection { background: var(--plum); color: var(--paper); }
+::selection { background: var(--clay); color: var(--night); }
 :focus-visible { outline: 2px solid var(--paper); outline-offset: 3px; }
 .on-paper :focus-visible { outline-color: var(--night); }
 p { text-wrap: pretty; }
@@ -57,8 +58,8 @@ p { text-wrap: pretty; }
 .button.light { background: var(--paper); color: var(--night); }
 .link { text-decoration: underline; text-decoration-thickness: 0.07em; text-underline-offset: 0.22em; text-decoration-color: color-mix(in srgb, currentColor 45%, transparent); transition: text-decoration-color var(--t-hover) ease, color var(--t-hover) ease; }
 @media (hover: hover) and (pointer: fine) {
-  .button:hover { background: #A9387E; }
-  .button.light:hover { background: #FFFFFF; }
+  .button:hover { background: #A4522F; }
+  .button.light:hover { background: #F0E8D8; }
   .link:hover { text-decoration-color: currentColor; }
 }
 
@@ -158,15 +159,15 @@ p { text-wrap: pretty; }
 .choices { display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px; }
 .choices.dates { grid-template-columns: repeat(3, 1fr); }
 .choice input { position: absolute; opacity: 0; pointer-events: none; }
-.choice span { display: flex; flex-direction: column; justify-content: center; min-height: 3.5rem; padding: 0.6rem 0.85rem; background: #E6E7EF; cursor: pointer; line-height: 1.25; transition: background-color var(--t-hover) ease, color var(--t-hover) ease, transform var(--t-press) var(--ease-out); }
+.choice span { display: flex; flex-direction: column; justify-content: center; min-height: 3.5rem; padding: 0.6rem 0.85rem; background: #D8CCB4; cursor: pointer; line-height: 1.25; transition: background-color var(--t-hover) ease, color var(--t-hover) ease, transform var(--t-press) var(--ease-out); }
 .choice span small { font-size: var(--step-small); color: var(--dusk); }
 .choice input:checked + span { background: var(--night); color: var(--paper); }
 .choice input:checked + span small { color: var(--soft); }
 .choice input:focus-visible + span { outline: 2px solid var(--night); outline-offset: 2px; }
 .choice:active span { transform: scale(0.98); }
-@media (hover: hover) and (pointer: fine) { .choice span:hover { background: #D9DBE7; } .choice input:checked + span:hover { background: var(--night); } }
+@media (hover: hover) and (pointer: fine) { .choice span:hover { background: #CFC2A8; } .choice input:checked + span:hover { background: var(--night); } }
 .reserva label.name { display: block; font-weight: 500; margin-bottom: 0.75rem; }
-.reserva input[type=text] { width: 100%; min-height: 3.25rem; padding: 0.7rem 0.9rem; background: #E6E7EF; border: 0; border-radius: 0; color: var(--night); }
+.reserva input[type=text] { width: 100%; min-height: 3.25rem; padding: 0.7rem 0.9rem; background: #D8CCB4; border: 0; border-radius: 0; color: var(--night); }
 .reserva .msg { margin: 2rem 0 1.25rem; padding: 1.1rem 1.25rem; background: var(--night); color: var(--paper); font-size: 1rem; }
 .reserva .msg b { display: block; font-weight: 500; color: var(--soft); font-size: var(--step-small); margin-bottom: 0.35rem; }
 .reserva .button { width: 100%; }
@@ -182,13 +183,13 @@ p { text-wrap: pretty; }
 /* contact: address in display rows */
 .contact { margin: 0 var(--edge); }
 .contact .lbl { display: inline-flex; align-items: center; gap: 0.35em; }
-.contact .ico { width: 0.8em; height: 0.8em; flex: none; color: var(--plum-light); transition: transform var(--t-hover) var(--ease-out); }
+.contact .ico { width: 0.8em; height: 0.8em; flex: none; color: var(--clay); transition: transform var(--t-hover) var(--ease-out); }
 @media (hover: hover) and (pointer: fine) { .contact a.row:hover .ico { transform: scale(1.1); } }
 .contact .row { display: flex; align-items: center; justify-content: center; text-align: center; gap: 1rem; min-height: clamp(64px, 7vw, 100px); padding: 0.6rem 20px; font-family: var(--font-display); text-transform: uppercase; font-size: calc(var(--step-display) * 0.6); line-height: 1; text-decoration: none; }
 .contact .row:nth-child(odd) { background: var(--night-2); }
 .contact .row:nth-child(even) { background: var(--night); }
 .contact a.row { transition: color var(--t-hover) ease; }
-@media (hover: hover) and (pointer: fine) { .contact a.row:hover { color: #D5DCF0; } }
+@media (hover: hover) and (pointer: fine) { .contact a.row:hover { color: #F0E8D8; } }
 .contact .row.go { background: var(--plum); gap: 0.5em; }
 .contact .arrow { width: 0.9em; height: 0.9em; border-radius: 50%; background: var(--paper); color: var(--plum); display: inline-grid; place-items: center; flex: none; transition: transform var(--t-hover) var(--ease-out); }
 .contact .arrow svg { width: 42%; height: 42%; }
