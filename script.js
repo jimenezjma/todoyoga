@@ -9,6 +9,27 @@
     addEventListener('load', () => setTimeout(() => targets.forEach((el) => { const r = el.getBoundingClientRect(); if (r.top < innerHeight && r.bottom > 0) el.classList.add('is-in'); }), 2500));
   } else targets.forEach((el) => el.classList.add('is-in'));
 
+  // story: one pinned screen, each line fades in and out as you scroll
+  const story = document.querySelector('[data-story]');
+  if (story && !reduce) {
+    const beats = [...story.querySelectorAll('.beat')];
+    const STEP = 0.75; // viewport heights of scroll per line
+    story.classList.add('pinned');
+    story.style.height = `calc(${beats.length * STEP * 100}svh + 100svh)`;
+    let cur = -1, ticking = false;
+    const set = () => {
+      ticking = false;
+      const r = story.getBoundingClientRect();
+      const p = Math.max(0, -r.top) / (innerHeight * STEP);
+      const i = Math.min(beats.length - 1, Math.floor(p));
+      if (i !== cur) { beats.forEach((b, n) => { b.classList.toggle('on', n === i); b.classList.toggle('past', n < i); }); cur = i; }
+      story.classList.toggle('started', p > 0.15);
+    };
+    addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(set); } }, { passive: true });
+    addEventListener('resize', set);
+    set();
+  }
+
   // signature: the room's light shifts (timed crossfade in the first stage)
   const cyc = document.querySelector('[data-cycle]');
   if (cyc && !reduce) {

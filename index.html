@@ -10,52 +10,105 @@
 </head>
 <body>
 
-<!-- ============ 1 · hero + intro, the room never moves ============ -->
-<div class="split" id="inicio">
-  <div class="column">
-    <header class="sheet">
-      <nav class="topline" aria-label="Principal">
-        <a class="link" href="#practica">La práctica</a>
-        <a class="wordmark" href="#inicio" aria-label="Yoga Nidra, inicio">Yoga Nidra</a>
-        <a class="link" href="#paquetes">Paquetes</a>
-      </nav>
-      <div class="hero-body">
-        <h1 class="lines"><span class="line"><span data-line style="--i:0">Si duermes, pero</span></span><span class="line"><span data-line style="--i:1">no descansas</span></span></h1>
-        <p class="when" data-rise style="--i:3">Sábados y domingos, 5:00 PM</p>
-        <p class="venue" data-rise style="--i:3"><img src="assets/logo-sinergia-beige.png" width="756" height="154" alt="Sinergia, centro de bienestar"><span>Bogotá</span></p>
-        <p class="sub" data-rise style="--i:4">Yoga Nidra con baño de sonido de cuencos de cristal: 60 minutos acostado, guiado por la voz de Mariana Vega.</p>
-        <a class="button" href="#reserva" data-rise style="--i:5">Reservar mi lugar</a>
-      </div>
-      <div class="hero-foot" aria-hidden="true"></div>
-    </header>
+<a class="skip" href="#inicio">Saltar al inicio</a>
 
-    <section class="intro" aria-label="El cansancio">
-      <div class="col">
-        <p data-reveal>Tu cuerpo está cansado. Pero tu cabeza no se calla.</p>
-        <p data-reveal style="--i:1">Te acuestas y empiezas a pensar en todo lo que tienes que hacer mañana. Duermes, pero no descansas. Y al día siguiente, otra vez lo mismo.</p>
-        <p data-reveal style="--i:2">Lo curioso es que intentas solucionarlo haciendo más cosas. <span class="soft">Más ejercicio. Más productividad. Más esfuerzo.</span></p>
-        <p data-reveal style="--i:3">Pero quizás lo que necesitas es exactamente lo contrario.</p>
-      </div>
-    </section>
+<!-- ============ 0 · la historia: el copy aparece al bajar ============ -->
+<section class="story" aria-label="¿Te pasa?" data-story>
+  <div class="story-stage">
+  <div class="beat"><p class="say" data-beat>¿Te pasa que tu cuerpo está cansado, pero tu cabeza no se calla?</p></div>
+  <div class="beat"><p class="say" data-beat>¿Que te acuestas a las 11 y a las 12 sigues pensando en el correo que no contestaste?</p></div>
+  <div class="beat"><p class="say" data-beat>A la una, en todo lo que tienes que hacer mañana. Y así…</p></div>
+  <div class="beat"><p class="shout" data-beat>Duermes. Pero no descansas.</p></div>
+  <div class="beat"><p class="say" data-beat>Y al día siguiente: café para arrancar, estás irritable a media tarde y se te olvidan cosas que antes no se te olvidaban.</p></div>
+  <div class="beat"><p class="shout" data-beat>¿Cómo arreglarlo?</p></div>
+  <div class="beat"><p class="say trio"><span data-beat>¿Más ejercicio?</span> <span data-beat style="--i:1">¿Más productividad?</span> <span data-beat style="--i:2">¿Más esfuerzo?</span></p></div>
+  <div class="beat"><p class="shout clay" data-beat>¡Nada que ver!</p></div>
+  <div class="beat"><p class="say" data-beat>Un sistema nervioso que no sabe apagarse no se arregla haciendo más.</p></div>
+  <div class="beat"><p class="say" data-beat>De hecho, quizá necesite justo lo contrario:</p></div>
+  <div class="beat last"><p class="giant" data-beat>Parar.</p></div>
   </div>
+  <p class="hint" aria-hidden="true">Sigue bajando</p>
+</section>
 
-  <aside class="stage" aria-label="La sala" data-cycle>
-    <img class="on" src="assets/hero-nidra.webp" width="1122" height="1402" alt="Una mujer descansa con los ojos cerrados bajo una manta tejida, junto a un cuenco tibetano y un cuenco de cristal">
-    <img src="assets/descanso.webp" width="1122" height="1402" alt="Vista desde arriba de una mujer acostada sobre una esterilla, cubierta con una manta, entre velas y cuencos" loading="lazy">
-    <div class="bar"><span>Sáb y dom · 5:00 PM</span><span>Calle 134A #13-40</span></div>
-  </aside>
-</div>
+<!-- ============ 1 · la portada real: centrada, foto a todo lo ancho ============ -->
+<header class="hero" id="inicio">
+  <div class="hero-media" data-cycle aria-hidden="true">
+    <img class="on" src="assets/nidra-practica.webp" width="1672" height="941" alt="" style="object-position: 60% 45%">
+    <img src="assets/hero-nidra.webp" width="1122" height="1402" alt="" loading="lazy" style="object-position: 50% 40%">
+  </div>
+  <nav class="topline" aria-label="Principal">
+    <a class="link" href="#ciencia">La ciencia</a>
+    <a class="wordmark" href="#inicio" aria-label="Mariana Vega, inicio">Mariana Vega</a>
+    <a class="link" href="#paquetes">Paquetes</a>
+  </nav>
+  <div class="hero-body">
+    <h1 class="lines"><span class="line"><span data-line style="--i:0">Yoga Nidra</span></span></h1>
+    <p class="when" data-rise style="--i:2">con baño de sonido<br>Sábados y domingos, 5:00 PM</p>
+    <p class="venue" data-rise style="--i:3"><img src="assets/logo-sinergia-beige.png" width="756" height="154" alt="Sinergia, centro de bienestar"><span>Bogotá</span></p>
+    <p class="sub" data-rise style="--i:4">60 minutos acostado, guiado por la voz de Mariana Vega. Sin hacer nada. Sin exigirte nada. Sin tener que lograr nada.</p>
+    <a class="button" href="#reserva" data-rise style="--i:5">Reservar mi lugar</a>
+  </div>
+  <p class="hero-bar"><span>Sáb y dom · 5:00 PM</span><span>Calle 134A #13-40, Bogotá</span></p>
+</header>
 
-<!-- ============ 2 · parar ============ -->
-<section class="parar" id="practica" aria-labelledby="parar-t">
-  <h2 id="parar-t">Parar</h2>
-  <div class="after">
-    <p class="min" data-reveal>60 minutos</p>
-    <p class="sin" data-reveal style="--i:1">Sin hacer nada. Sin exigirte nada. Sin tener que lograr nada.</p>
+<!-- ============ 2 · lo que dice la ciencia ============ -->
+<section class="ciencia on-paper" id="ciencia" aria-labelledby="cie-t">
+  <div class="cie-head">
+    <h2 id="cie-t" data-reveal>No tienes que creerme a mí</h2>
+    <p class="lead" data-reveal style="--i:1">Esto se ha medido:</p>
+  </div>
+  <div class="facts">
+    <article class="fact" data-reveal>
+      <h3 class="fig">Menos tiempo para dormir</h3>
+      <p>En un ensayo con 41 adultos con insomnio crónico, quienes practicaron Yoga Nidra durante 8 semanas pasaron de tardar 93 minutos en quedarse dormidos a tardar 56. Durmieron casi una hora más por noche y su cortisol, la hormona del estrés, bajó. <span class="src">— All India Institute of Medical Sciences, Nueva Delhi · <a class="link" href="https://nmji.in/yoga-nidra-practice-shows-improvement-in-sleep-in-patients-with-chronic-insomnia-a-randomized-controlled-trial/" target="_blank" rel="noopener">Ver estudio</a></span></p>
+    </article>
+    <article class="fact" data-reveal style="--i:1">
+      <h3 class="fig">65 % de dopamina endógena</h3>
+      <p>Endógena significa que la produce tu propio cuerpo, sin nada externo. Un estudio con escáner cerebral (PET) estimó que durante Yoga Nidra el cerebro libera alrededor de un 65 % más de dopamina, el neurotransmisor ligado a la calma atenta y la motivación. <span class="src">— Instituto John F. Kennedy, Dinamarca · <a class="link" href="https://pubmed.ncbi.nlm.nih.gov/11958969/" target="_blank" rel="noopener">Ver estudio</a></span></p>
+    </article>
+    <article class="fact" data-reveal style="--i:2">
+      <h3 class="fig">Reduce el estrés corporal</h3>
+      <p>362 adultos practicaron entre 11 y 30 minutos al día durante dos meses. Bajó su estrés, su ansiedad y ese pensar en círculos que no te deja dormir, y cambió el ritmo diario de su cortisol, la hormona con la que el cuerpo responde al estrés. <span class="src">— Universidad de la Bundeswehr, Múnich · <a class="link" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12080877/" target="_blank" rel="noopener">Ver estudio</a></span></p>
+    </article>
   </div>
 </section>
 
-<!-- ============ 3 · letter, itinerary, needs — the room changes with you ============ -->
+<!-- ============ 3 · paquetes ============ -->
+<section class="plans" id="paquetes" aria-label="Paquetes">
+  <article class="plan one">
+    <h2 data-reveal>1 clase</h2>
+    <p class="who" data-reveal style="--i:1">Para probarlo. Una tarde para sentir cómo es parar de verdad.</p>
+    <p class="incl" data-reveal style="--i:2">Una experiencia de Yoga Nidra acompañada de un baño de sonido con cuencos de cristal, diseñada para ayudarte a bajar el ritmo, relajar el cuerpo y descansar profundamente.</p>
+    <div class="bottom">
+      <div data-reveal style="--i:3"><p class="price nums">45.000</p><p class="per">COP por sesión</p></div>
+      <a class="button light" href="#reserva" data-pkg="1">Reservar 1 clase</a>
+    </div>
+  </article>
+  <article class="plan four">
+    <h2 data-reveal>4 clases</h2>
+    <p class="who" data-reveal style="--i:1">Una sesión te da un respiro. Cuatro le enseñan a tu cuerpo a bajar el ritmo.</p>
+    <p class="incl" data-reveal style="--i:2">Cuatro encuentros de Yoga Nidra con baño de sonido, cada uno con una temática diferente: soltar, confiar, escuchar tus emociones y darte permiso de empezar de nuevo. Ahorras 20.000 COP.</p>
+    <div class="bottom">
+      <div data-reveal style="--i:3"><p class="price nums">160.000</p><p class="per">COP · 40.000 por clase</p></div>
+      <a class="button light" href="#reserva" data-pkg="4">Reservar 4 clases</a>
+    </div>
+  </article>
+</section>
+
+<!-- ============ 4 · para quién es ============ -->
+<section class="quien" id="para-ti" aria-labelledby="quien-t">
+  <h2 id="quien-t" data-reveal>Esto es para ti si…</h2>
+  <ul class="quien-list">
+    <li data-reveal>Te despiertas cansado aunque hayas dormido ocho horas.</li>
+    <li data-reveal style="--i:1">Tu cabeza sigue trabajando cuando tú ya terminaste.</li>
+    <li data-reveal style="--i:2">Has intentado meditar y no has podido quedarte quieto.</li>
+    <li data-reveal style="--i:3">Sientes que vives en modo alerta y no sabes cómo bajarlo.</li>
+    <li data-reveal style="--i:4">Quieres volver a pensar con claridad.</li>
+  </ul>
+  <a class="button" href="#reserva" data-reveal style="--i:5">Reservar mi lugar</a>
+</section>
+
+<!-- ============ 5 · letter, itinerary, needs — the room changes with you ============ -->
 <div class="split reverse">
   <aside class="stage" aria-label="La sala" data-follow>
     <img class="on" src="assets/nidra-practica.webp" width="1672" height="941" alt="Una mujer en reposo profundo junto a cuencos tibetanos, un cuenco de cristal y velas" loading="lazy" data-for="carta" style="object-position: 62% 50%">
@@ -69,7 +122,7 @@
       <div class="col">
         <p data-reveal>Eso es Yoga Nidra: una práctica guiada donde solo necesitas acostarte, cerrar los ojos y dejarte llevar a ese espacio entre estar despierto y dormido.</p>
         <p data-reveal style="--i:1"><i>Nidra</i> significa sueño. Pero no vienes a dormir: vienes a quedarte en el umbral, donde el cuerpo descansa por completo y la mente, por fin, deja de empujar.</p>
-        <p data-reveal style="--i:2">Mientras tanto, los cuencos de cristal suenan alrededor de ti. Su vibración sostenida ayuda a soltar la tensión que el cuerpo guarda sin que te des cuenta.</p>
+        <p data-reveal style="--i:2">En los últimos 15 minutos suenan los cuencos. No tienes que hacer nada con ese sonido. Solo dejar que te atraviese.</p>
         <p data-reveal style="--i:3">Es un espacio para descansar profundamente y recuperar la claridad mental. No necesitas saber yoga. Ni ser flexible. Ni siquiera saber meditar.</p>
         <p data-reveal style="--i:4">Solo necesitas <mark>darte permiso para parar</mark>. Yo me encargo del resto.</p>
         <p class="sign" data-reveal style="--i:5"><span class="name">Mariana Vega</span><span class="role">Guía de Yoga Nidra y baño de sonido</span></p>
@@ -132,28 +185,6 @@
   </div>
 </div>
 
-<!-- ============ 4 · paquetes ============ -->
-<section class="plans" id="paquetes" aria-label="Paquetes">
-  <article class="plan one">
-    <h2 data-reveal>1 clase</h2>
-    <p class="who" data-reveal style="--i:1">Para conocer la práctica y regalarte una tarde.</p>
-    <p class="incl" data-reveal style="--i:2">Una experiencia de Yoga Nidra acompañada de un baño de sonido con cuencos de cristal, diseñada para ayudarte a bajar el ritmo, relajar el cuerpo y descansar profundamente.</p>
-    <div class="bottom">
-      <div data-reveal style="--i:3"><p class="price nums">45.000</p><p class="per">COP por sesión</p></div>
-      <a class="button light" href="#reserva" data-pkg="1">Reservar 1 clase</a>
-    </div>
-  </article>
-  <article class="plan four">
-    <h2 data-reveal>4 clases</h2>
-    <p class="who" data-reveal style="--i:1">Para que el descanso deje de ser una excepción.</p>
-    <p class="incl" data-reveal style="--i:2">Cuatro encuentros de Yoga Nidra con baño de sonido, cada uno con una temática diferente: soltar, confiar, escuchar tus emociones y darte permiso de empezar de nuevo. Ahorras 20.000 COP.</p>
-    <div class="bottom">
-      <div data-reveal style="--i:3"><p class="price nums">160.000</p><p class="per">COP · 40.000 por clase</p></div>
-      <a class="button light" href="#reserva" data-pkg="4">Reservar 4 clases</a>
-    </div>
-  </article>
-</section>
-
 <!-- ============ 5 · reserva, the live thing ============ -->
 <section class="reserva on-paper" id="reserva" aria-labelledby="res-t">
   <div class="left">
@@ -213,7 +244,7 @@
 
 <footer>
   <span>Yoga Nidra con baño de sonido</span>
-  <nav aria-label="Pie"><a class="link" href="#practica">La práctica</a><a class="link" href="#paquetes">Paquetes</a><a class="link" href="#reserva">Reservar</a></nav>
+  <nav aria-label="Pie"><a class="link" href="#ciencia">La ciencia</a><a class="link" href="#carta">La práctica</a><a class="link" href="#paquetes">Paquetes</a><a class="link" href="#reserva">Reservar</a></nav>
   <span class="right">© 2026 Mariana Vega · <img class="foot-logo" src="assets/logo-sinergia-beige.png" width="756" height="154" alt="Sinergia, centro de bienestar"></span>
 </footer>
 
