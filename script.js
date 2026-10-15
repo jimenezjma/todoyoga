@@ -54,12 +54,13 @@
   const M = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
   const now = Date.now();
   const local = new Date(now + OFF);
+  const START = Date.UTC(2026, 9, 25, 17, 0) - OFF; // primera sesión: domingo 25 de octubre de 2026, 5:00 PM
   const sessions = [];
-  for (let i = 0; i < 28 && sessions.length < 6; i++) {
+  for (let i = 0; i < 400 && sessions.length < 6; i++) {
     const d = new Date(Date.UTC(local.getUTCFullYear(), local.getUTCMonth(), local.getUTCDate() + i, 17, 0) - OFF);
     const ld = new Date(d.getTime() + OFF);
     const wd = ld.getUTCDay();
-    if ((wd === 6 || wd === 0) && d.getTime() > now) sessions.push({ t: d.getTime(), wd, day: ld.getUTCDate(), mon: ld.getUTCMonth(), i });
+    if ((wd === 6 || wd === 0) && d.getTime() > now && d.getTime() >= START) sessions.push({ t: d.getTime(), wd, day: ld.getUTCDate(), mon: ld.getUTCMonth(), i });
   }
   const label = (s) => `${D[s.wd]} ${s.day} de ${M[s.mon]}`;
   const cap = (x) => x[0].toUpperCase() + x.slice(1);

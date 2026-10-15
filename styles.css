@@ -129,7 +129,8 @@ p { text-wrap: pretty; }
 .needs .col { max-width: 32.5rem; }
 .needs h2 { font-size: var(--step-head); }
 .needs .group + .group { margin-top: 2.5rem; }
-.needs .gname { color: var(--soft); margin: 2rem 0 0.25rem; }
+.needs .gname { font-family: var(--font-display); font-weight: 400; text-transform: uppercase; letter-spacing: -0.01em; line-height: 0.9; font-size: var(--step-head); margin: 0 0 0.25rem; }
+.needs .group + .group { margin-top: 3.5rem; }
 .needs li { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; min-height: 38px; padding: 0.35rem 0; }
 .needs li span:last-child { color: var(--soft); font-size: var(--step-small); text-align: right; }
 .needs figure { margin-top: 3.5rem; }
@@ -351,7 +352,7 @@ footer .foot-logo { display: inline-block; height: 1.4em; width: auto; vertical-
 .hero .hero-body { align-self: center; padding: 2rem var(--pad) 3rem; display: grid; justify-items: center; gap: 1.5rem; }
 .hero .hero-body h1 { font-size: clamp(4.5rem, 1rem + 11vw, 13rem); line-height: 0.85; max-width: none; }
 .hero .hero-body .sub { max-width: 44ch; }
-.hero-bar { display: flex; justify-content: space-between; gap: 1rem; padding: 1.1rem var(--pad); font-size: var(--step-small); background: var(--night); margin: 0; }
+.hero-bar { display: flex; justify-content: space-between; gap: 1rem; padding: 1.25rem var(--pad) 1.5rem; font-size: var(--step-small); margin: 0; }
 @media (prefers-reduced-motion: no-preference) {
   .hero-media img.on { animation: breathe 16s ease-in-out infinite alternate; }
 }
