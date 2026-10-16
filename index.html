@@ -10,10 +10,11 @@
 </head>
 <body>
 
-<a class="skip" href="#inicio">Saltar al inicio</a>
+<!-- Historia en scroll: oculta por ahora. Para reactivarla, quita el atributo "hidden" de la sección y de este enlace. -->
+<a class="skip" href="#inicio" hidden>Saltar al inicio</a>
 
 <!-- ============ 0 · la historia: el copy aparece al bajar ============ -->
-<section class="story" aria-label="¿Te pasa?" data-story>
+<section class="story" aria-label="¿Te pasa?" data-story hidden>
   <div class="story-stage">
   <div class="beat"><p class="say" data-beat>¿Te pasa que tu cuerpo está cansado, pero tu cabeza no se calla?</p></div>
   <div class="beat"><p class="say" data-beat>¿Que te acuestas a las 11 y a las 12 sigues pensando en el correo que no contestaste?</p></div>
@@ -38,12 +39,12 @@
   </div>
   <nav class="topline" aria-label="Principal">
     <a class="link" href="#ciencia">La ciencia</a>
-    <a class="wordmark" href="#inicio" aria-label="Mariana Vega, inicio">Mariana Vega</a>
+    <a class="wordmark" href="#inicio" aria-label="Por Mariana Vega, inicio"><i class="por">por</i> Mariana Vega</a>
     <a class="link" href="#paquetes">Paquetes</a>
   </nav>
   <div class="hero-body">
-    <h1 class="lines"><span class="line"><span data-line style="--i:0">Yoga Nidra</span></span></h1>
-    <p class="when" data-rise style="--i:2">con baño de sonido<br>Sábados y domingos, 5:00 PM</p>
+    <h1 class="lines"><span class="line"><span data-line style="--i:0">Yoga Nidra</span></span><span class="line h1-sub"><span data-line style="--i:1">con baño de sonido</span></span></h1>
+    <p class="when" data-rise style="--i:2">Sábados y domingos, 5:00 PM</p>
     <p class="venue" data-rise style="--i:3"><img src="assets/logo-sinergia-beige.png" width="756" height="154" alt="Sinergia, centro de bienestar"><span>Bogotá</span></p>
     <p class="sub" data-rise style="--i:4">60 minutos acostado, guiado por la voz de Mariana Vega. Sin hacer nada. Sin exigirte nada. Sin tener que lograr nada.</p>
     <a class="button" href="#reserva" data-rise style="--i:5">Reservar mi lugar</a>
@@ -51,51 +52,7 @@
   <p class="hero-bar"><span>Sáb y dom · 5:00 PM</span><span>Calle 134A #13-40, Bogotá</span></p>
 </header>
 
-<!-- ============ 2 · lo que dice la ciencia ============ -->
-<section class="ciencia on-paper" id="ciencia" aria-labelledby="cie-t">
-  <div class="cie-head">
-    <h2 id="cie-t" data-reveal>No tienes que creerme a mí</h2>
-    <p class="lead" data-reveal style="--i:1">Esto se ha medido:</p>
-  </div>
-  <div class="facts">
-    <article class="fact" data-reveal>
-      <h3 class="fig">Menos tiempo para dormir</h3>
-      <p>En un ensayo con 41 adultos con insomnio crónico, quienes practicaron Yoga Nidra durante 8 semanas pasaron de tardar 93 minutos en quedarse dormidos a tardar 56. Durmieron casi una hora más por noche y su cortisol, la hormona del estrés, bajó. <span class="src">— All India Institute of Medical Sciences, Nueva Delhi · <a class="link" href="https://nmji.in/yoga-nidra-practice-shows-improvement-in-sleep-in-patients-with-chronic-insomnia-a-randomized-controlled-trial/" target="_blank" rel="noopener">Ver estudio</a></span></p>
-    </article>
-    <article class="fact" data-reveal style="--i:1">
-      <h3 class="fig">65 % de dopamina endógena</h3>
-      <p>Endógena significa que la produce tu propio cuerpo, sin nada externo. Un estudio con escáner cerebral (PET) estimó que durante Yoga Nidra el cerebro libera alrededor de un 65 % más de dopamina, el neurotransmisor ligado a la calma atenta y la motivación. <span class="src">— Instituto John F. Kennedy, Dinamarca · <a class="link" href="https://pubmed.ncbi.nlm.nih.gov/11958969/" target="_blank" rel="noopener">Ver estudio</a></span></p>
-    </article>
-    <article class="fact" data-reveal style="--i:2">
-      <h3 class="fig">Reduce el estrés corporal</h3>
-      <p>362 adultos practicaron entre 11 y 30 minutos al día durante dos meses. Bajó su estrés, su ansiedad y ese pensar en círculos que no te deja dormir, y cambió el ritmo diario de su cortisol, la hormona con la que el cuerpo responde al estrés. <span class="src">— Universidad de la Bundeswehr, Múnich · <a class="link" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12080877/" target="_blank" rel="noopener">Ver estudio</a></span></p>
-    </article>
-  </div>
-</section>
-
-<!-- ============ 3 · paquetes ============ -->
-<section class="plans" id="paquetes" aria-label="Paquetes">
-  <article class="plan one">
-    <h2 data-reveal>1 clase</h2>
-    <p class="who" data-reveal style="--i:1">Para probarlo. Una tarde para sentir cómo es parar de verdad.</p>
-    <p class="incl" data-reveal style="--i:2">Una experiencia de Yoga Nidra acompañada de un baño de sonido con cuencos de cristal, diseñada para ayudarte a bajar el ritmo, relajar el cuerpo y descansar profundamente.</p>
-    <div class="bottom">
-      <div data-reveal style="--i:3"><p class="price nums">45.000</p><p class="per">COP por sesión</p></div>
-      <a class="button light" href="#reserva" data-pkg="1">Reservar 1 clase</a>
-    </div>
-  </article>
-  <article class="plan four">
-    <h2 data-reveal>4 clases</h2>
-    <p class="who" data-reveal style="--i:1">Una sesión te da un respiro. Cuatro le enseñan a tu cuerpo a bajar el ritmo.</p>
-    <p class="incl" data-reveal style="--i:2">Cuatro encuentros de Yoga Nidra con baño de sonido, cada uno con una temática diferente: soltar, confiar, escuchar tus emociones y darte permiso de empezar de nuevo. Ahorras 20.000 COP.</p>
-    <div class="bottom">
-      <div data-reveal style="--i:3"><p class="price nums">160.000</p><p class="per">COP · 40.000 por clase</p></div>
-      <a class="button light" href="#reserva" data-pkg="4">Reservar 4 clases</a>
-    </div>
-  </article>
-</section>
-
-<!-- ============ 4 · para quién es ============ -->
+<!-- ============ 2 · para quién es ============ -->
 <section class="quien" id="para-ti" aria-labelledby="quien-t">
   <h2 id="quien-t" data-reveal>Esto es para ti si…</h2>
   <ul class="quien-list">
@@ -108,7 +65,7 @@
   <a class="button" href="#reserva" data-reveal style="--i:5">Reservar mi lugar</a>
 </section>
 
-<!-- ============ 5 · letter, itinerary, needs — the room changes with you ============ -->
+<!-- ============ 3 · letter, itinerary, needs — the room changes with you ============ -->
 <div class="split reverse">
   <aside class="stage" aria-label="La sala" data-follow>
     <img class="on" src="assets/nidra-practica.webp" width="1672" height="941" alt="Una mujer en reposo profundo junto a cuencos tibetanos, un cuenco de cristal y velas" loading="lazy" data-for="carta" style="object-position: 62% 50%">
@@ -120,12 +77,12 @@
   <div class="column">
     <section class="letter" id="carta" aria-label="Qué es Yoga Nidra">
       <div class="col">
-        <p data-reveal>Eso es Yoga Nidra: una práctica guiada donde solo necesitas acostarte, cerrar los ojos y dejarte llevar a ese espacio entre estar despierto y dormido.</p>
-        <p data-reveal style="--i:1"><i>Nidra</i> significa sueño. Pero no vienes a dormir: vienes a quedarte en el umbral, donde el cuerpo descansa por completo y la mente, por fin, deja de empujar.</p>
-        <p data-reveal style="--i:2">En los últimos 15 minutos suenan los cuencos. No tienes que hacer nada con ese sonido. Solo dejar que te atraviese.</p>
-        <p data-reveal style="--i:3">Es un espacio para descansar profundamente y recuperar la claridad mental. No necesitas saber yoga. Ni ser flexible. Ni siquiera saber meditar.</p>
-        <p data-reveal style="--i:4">Solo necesitas <mark>darte permiso para parar</mark>. Yo me encargo del resto.</p>
-        <p class="sign" data-reveal style="--i:5"><span class="name">Mariana Vega</span><span class="role">Guía de Yoga Nidra y baño de sonido</span></p>
+        <p data-reveal>Eso es <mark>Yoga Nidra</mark>: una práctica guiada donde solo necesitas acostarte, cerrar los ojos y dejarte llevar a ese espacio entre estar despierto y dormido.</p>
+        <p data-reveal style="--i:1"><i>Nidra</i> significa sueño. Pero no vienes a dormir: vienes a quedarte en el umbral, donde el cuerpo descansa por completo y la actividad mental se reduce al mínimo.</p>
+        <p data-reveal style="--i:2">En los últimos 15 minutos suenan los cuencos. Basta con que te dejes llevar por sus frecuencias para sentir sus efectos.</p>
+        <p data-reveal style="--i:3">Eso es todo, solo necesitas <mark>dejarte guiar</mark>. Yo me encargo del resto.</p>
+        <p class="sign" data-reveal style="--i:4"><span class="name">Mariana Vega</span><span class="role">Profesora Registrada de Yoga con Yoga Alliance</span></p>
+        <img class="ryt" src="assets/RYT200-beige.png" width="240" height="240" alt="Registered Yoga Teacher RYT 200, Yoga Alliance" data-reveal style="--i:5">
       </div>
     </section>
 
@@ -184,7 +141,54 @@
   </div>
 </div>
 
-<!-- ============ 5 · reserva, the live thing ============ -->
+<!-- ============ 4 · lo que dice la ciencia ============ -->
+<section class="ciencia on-paper" id="ciencia" aria-labelledby="cie-t">
+  <div class="cie-head">
+    <h2 id="cie-t" data-reveal>No tienes que creerme a mí</h2>
+    <p class="lead" data-reveal style="--i:1">Esto se ha medido:</p>
+  </div>
+  <div class="facts">
+    <article class="fact" data-reveal>
+      <h3 class="fig">Menos tiempo para dormir</h3>
+      <p>En un ensayo con 41 adultos con insomnio crónico, quienes practicaron Yoga Nidra durante 8 semanas pasaron de tardar 93 minutos en quedarse dormidos a tardar 56. Durmieron casi una hora más por noche y su cortisol, la hormona del estrés, bajó. <span class="src">— All India Institute of Medical Sciences, Nueva Delhi · <a class="link" href="https://nmji.in/yoga-nidra-practice-shows-improvement-in-sleep-in-patients-with-chronic-insomnia-a-randomized-controlled-trial/" target="_blank" rel="noopener">Ver estudio</a></span></p>
+    </article>
+    <article class="fact" data-reveal style="--i:1">
+      <h3 class="fig">65 % de dopamina endógena</h3>
+      <p>Endógena significa que la produce tu propio cuerpo, sin nada externo. Un estudio con escáner cerebral (PET) estimó que durante Yoga Nidra el cerebro libera alrededor de un 65 % más de dopamina, el neurotransmisor ligado a la calma atenta y la motivación. <span class="src">— Instituto John F. Kennedy, Dinamarca · <a class="link" href="https://pubmed.ncbi.nlm.nih.gov/11958969/" target="_blank" rel="noopener">Ver estudio</a></span></p>
+    </article>
+    <article class="fact" data-reveal style="--i:2">
+      <h3 class="fig">Reduce el estrés corporal</h3>
+      <p>362 adultos practicaron entre 11 y 30 minutos al día durante dos meses. Bajó su estrés, su ansiedad y ese pensar en círculos que no te deja dormir, y cambió el ritmo diario de su cortisol, la hormona con la que el cuerpo responde al estrés. <span class="src">— Universidad de la Bundeswehr, Múnich · <a class="link" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12080877/" target="_blank" rel="noopener">Ver estudio</a></span></p>
+    </article>
+  </div>
+</section>
+
+<!-- ============ 5 · paquetes + reserva, juntos ============ -->
+<section class="apuntas" aria-labelledby="apuntas-t">
+  <h2 id="apuntas-t" data-reveal>Entonces, te apuntas?</h2>
+</section>
+
+<section class="plans" id="paquetes" aria-label="Paquetes">
+  <article class="plan one">
+    <h2 data-reveal>1 clase</h2>
+    <p class="who" data-reveal style="--i:1">Para probarlo. Una tarde para sentir cómo es parar de verdad.</p>
+    <p class="incl" data-reveal style="--i:2">Una experiencia de Yoga Nidra acompañada de un baño de sonido con cuencos de cristal, diseñada para ayudarte a bajar el ritmo, relajar el cuerpo y descansar profundamente.</p>
+    <div class="bottom">
+      <div data-reveal style="--i:3"><p class="price nums">45.000</p><p class="per">COP por sesión</p></div>
+      <a class="button light" href="#reserva" data-pkg="1">Reservar 1 clase</a>
+    </div>
+  </article>
+  <article class="plan four">
+    <h2 data-reveal>4 clases</h2>
+    <p class="who" data-reveal style="--i:1">Una sesión te da un respiro. Cuatro le enseñan a tu cuerpo a bajar el ritmo.</p>
+    <p class="incl" data-reveal style="--i:2">Cuatro encuentros de Yoga Nidra con baño de sonido, cada uno con una temática diferente: soltar, confiar, escuchar tus emociones y darte permiso de empezar de nuevo. Ahorras 20.000 COP.</p>
+    <div class="bottom">
+      <div data-reveal style="--i:3"><p class="price nums">160.000</p><p class="per">COP · 40.000 por clase</p></div>
+      <a class="button light" href="#reserva" data-pkg="4">Reservar 4 clases</a>
+    </div>
+  </article>
+</section>
+
 <section class="reserva on-paper" id="reserva" aria-labelledby="res-t">
   <div class="left">
     <h2 id="res-t" data-reveal>Reserva tu tarde</h2>
@@ -212,7 +216,6 @@
     <p class="msg" id="msg"><b>Mensaje que se enviará</b><span id="msg-text">Hola Mariana, quiero reservar 1 clase de Yoga Nidra con baño de sonido.</span></p>
     <input type="hidden" name="text" id="text-field" value="Hola Mariana, quiero reservar 1 clase de Yoga Nidra con baño de sonido.">
     <button class="button" type="submit">Enviar por WhatsApp</button>
-    <p class="note">Se abre WhatsApp con el mensaje listo para +57 350 757 4553.</p>
   </form>
 </section>
 
@@ -220,15 +223,15 @@
 <section class="faq" id="preguntas" aria-labelledby="faq-t">
   <h2 id="faq-t" data-reveal>Preguntas</h2>
   <div class="text" data-reveal style="--i:1">
-    <p><b>¿Qué es exactamente el Yoga Nidra?</b> Una práctica de relajación guiada que haces acostado. La voz te lleva por el cuerpo y la respiración hasta un descanso profundo, mientras una parte de ti se queda despierta, en el umbral del sueño.</p>
-    <p><b>¿Necesito experiencia?</b> No. No necesitas saber yoga, ser flexible ni saber meditar. Solo seguir una voz con los ojos cerrados.</p>
-    <p><b>¿Y si me quedo dormido?</b> Pasa, y está bien. El cuerpo toma lo que necesita. Al final la voz te acompaña de vuelta, sin sobresaltos.</p>
-    <p><b>¿Qué es el baño de sonido?</b> En los últimos 15 minutos suenan cuencos de cristal a tu alrededor. Su vibración larga y envolvente ayuda a soltar la tensión y a bajar el ruido mental.</p>
-    <p><b>¿Qué debo llevar?</b> Tu mat de yoga, ropa cómoda y abrigada, y medias. En la sala te esperan una cobija, un cojín y un antifaz.</p>
-    <p><b>¿A qué hora llego?</b> La práctica empieza a las 5:00 PM. Llega unos diez minutos antes para acomodarte sin prisa.</p>
-    <p><b>¿Cómo reservo?</b> Escribe por WhatsApp al +57 350 757 4553 con el día y el paquete. Allí te confirman el cupo y la forma de pago.</p>
-    <p><b>¿Cómo funcionan las 4 clases?</b> Son cuatro encuentros, cada uno con su temática: soltar, confiar, escuchar tus emociones y empezar de nuevo. Pagas 160.000 COP en lugar de 180.000.</p>
-    <p><b>¿Sirve si tengo insomnio o ansiedad?</b> Es un espacio pensado para desacelerar y descansar de verdad. Puede acompañarte, pero no reemplaza un tratamiento médico.</p>
+    <p><b>¿Qué es exactamente el Yoga Nidra?</b> Una práctica de relajación guiada que haces acostado. Mi voz guía tu conciencia por el cuerpo y la respiración hasta un descanso profundo. La idea es apagar tu mente mientras tu conciencia sigue ahí, en el umbral del sueño.</p>
+    <p><b>¿Y si me quedo dormido?</b> Puede pasar, y está bien. El cuerpo toma lo que necesita. Al final la voz te acompaña de vuelta, sin sobresaltos.</p>
+    <p><b>¿Necesito experiencia?</b> Si te sabes acostar, puedes hacer esto hasta con los ojos cerrados.</p>
+    <p><b>¿Qué es el baño de sonido?</b> En los últimos 15 minutos suenan cuencos de cristal a tu alrededor. Su vibración larga y envolvente ayuda a soltar la tensión física y bajar el ruido mental.</p>
+    <p><b>¿Qué debo llevar?</b> Tu mat de yoga, ropa cómoda y abrigada, y medias. En la sala te esperan una cobija, un cojín y un antifaz por si los necesitas para relajarte mejor.</p>
+    <p><b>¿A qué hora llego?</b> La práctica empieza a las 5:00 PM. Llega unos diez minutos antes para acomodarte sin prisa y sin interrumpir a los demás.</p>
+    <p><b>¿Cómo reservo?</b> Escribe por WhatsApp con el día y el paquete. Allí te confirmo el cupo y la forma de pago.</p>
+    <p><b>¿Cómo funcionan las 4 clases?</b> Simple: pagas por adelantado 4 clases para que vengas en las próximas semanas y así te sale un poco más económico.</p>
+    <p><b>¿Sirve si tengo insomnio o ansiedad?</b> Quiero ser bien clara: esto no reemplaza un tratamiento médico, claro está, pero es un acompañamiento muy útil.</p>
   </div>
 </section>
 

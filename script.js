@@ -11,7 +11,7 @@
 
   // story: one pinned screen, each line fades in and out as you scroll
   const story = document.querySelector('[data-story]');
-  if (story && !reduce) {
+  if (story && !story.hidden && !reduce) {
     const beats = [...story.querySelectorAll('.beat')];
     const STEP = 0.75; // viewport heights of scroll per line
     story.classList.add('pinned');

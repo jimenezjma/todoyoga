@@ -224,7 +224,6 @@ footer .right { text-align: right; }
   .parar .sin { margin-top: 1.5rem; }
   .plans { display: block; }
   .plan { padding: 3.5rem 20px 24px; }
-  .plan.four { order: -1; }
   .plans { display: flex; flex-direction: column; }
   .plan h2 { font-size: 13vw; }
   .plan .price { font-size: 22vw; }
@@ -363,3 +362,25 @@ footer .foot-logo { display: inline-block; height: 1.4em; width: auto; vertical-
   .hero .hero-body .button { width: 100%; }
   .hero-bar { flex-direction: column; align-items: center; gap: 0.25rem; padding: 1rem 20px; }
 }
+.letter .ryt { width: 72px; height: 72px; margin-top: 1.25rem; }
+
+/* paquetes + reserva read as one block */
+.plans { margin-bottom: 0; }
+.plans + .reserva { padding-top: clamp(4rem, 7vw, 6rem); }
+
+/* para quién: each line carries a small crescent moon */
+.quien-list { gap: 0; }
+.quien-list li { position: relative; padding: 1.15rem 0 1.15rem 3rem; }
+.quien-list li::before { content: ""; position: absolute; left: 0; top: 1.3rem; width: 1.6rem; height: 1.6rem; background: var(--plum-light);
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M20.5 14.6A8.6 8.6 0 0 1 9.4 3.5a8.6 8.6 0 1 0 11.1 11.1z'/%3E%3C/svg%3E") center / contain no-repeat;
+          mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M20.5 14.6A8.6 8.6 0 0 1 9.4 3.5a8.6 8.6 0 1 0 11.1 11.1z'/%3E%3C/svg%3E") center / contain no-repeat; }
+
+/* hero: subtitle belongs to the title */
+.hero .hero-body h1 .h1-sub { display: block; font-size: 0.26em; line-height: 1; letter-spacing: 0.02em; margin-top: 0.35em; }
+/* nav: "por" lowercase italic */
+.wordmark .por { font-family: var(--font-text); font-style: italic; text-transform: none; font-size: 0.5em; letter-spacing: 0; margin-right: 0.15em; vertical-align: 0.12em; }
+/* the question before the prices */
+.apuntas { padding: var(--section) var(--pad) clamp(3rem, 5vw, 4.5rem); text-align: center; }
+.apuntas h2 { font-size: var(--step-display); }
+@media (max-width: 860px) { .apuntas { padding: 5rem 20px 3rem; } .apuntas h2 { font-size: 13vw; } }
+@media (max-width: 860px) { .hero .hero-body h1 .h1-sub { font-size: 0.34em; } }
